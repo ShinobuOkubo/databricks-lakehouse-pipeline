@@ -1,11 +1,11 @@
-# 秘密の環境設定ファイルをGitの管理から外す
+# 環境設定ファイルをGitの管理から外す
 setup_env.bat
 
 # Terraformの実行ファイル自体を除外
 terraform.exe
 
 # Terraformが自動生成するローカル用の設定やキャッシュフォルダも除外
-.terraform/
+**/.terraform/
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
-.terraform.lock.hcl
