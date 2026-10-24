@@ -7,7 +7,8 @@ SELECT
     customer_id,
     gender,
     age,
-    prefecture
+    prefecture,
+    updated_at
 FROM 
     freelance_sandbox.cleaned_data.customers_cleaned;
 
@@ -19,7 +20,8 @@ SELECT
     product_id,
     product_name,
     category,
-    price
+    price,
+    updated_at
 FROM 
     freelance_sandbox.cleaned_data.products_cleaned;
 
@@ -33,6 +35,7 @@ SELECT
     customer_id,
     product_id,
     quantity,
-    total_amount
+    total_amount,
+    updated_at
 FROM 
     freelance_sandbox.cleaned_data.sales_cleaned;
